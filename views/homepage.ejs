@@ -1,0 +1,18 @@
+<%- include("../partials/header.ejs")%>
+   
+    <div class="jumbotron">
+        <h1 class="display-4">Movie App</h1>
+        <p class="lead">This is a place where you can find any movie detail. </p>
+        <hr class="my-4">
+        
+        <form action="/result" method="GET" >     
+            <label>Enter Movie Name</label>
+            <br>
+            <input type="text" name="movieName" placeholder="MovieName" required>
+            
+           
+            <button  class="btn btn-success">Submit</button>
+        </form>
+    </div>
+    
+<%- include("../partials/footer.ejs") %>

@@ -1,0 +1,74 @@
+hr{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+iframe{
+  display: none;
+}
+
+
+#container-id{
+				padding-top:30px;
+				background-color:#555;
+				margin-top:100px;
+				border-radius:5px;
+				opacity:0.8;
+        width: 70%;
+        height: 54%;
+}
+.jumbotron{
+				background-color: #eee;
+				color:blue;
+}
+.navbar{
+	background-color: #eee;
+	opacity:.8;
+  font-family: 'Play', cursive;
+}
+.nav{
+				margin-right:5%;
+				margin-left:5%;
+}
+li .btn{
+				font-size:2.0em;
+}
+
+.pageOne > h1{
+				color:#eee;
+         font-family: 'Courgette', cursive;
+}
+.pageOne{
+ background:url("https://static.pexels.com/photos/543451/pexels-photo-543451.jpeg") center fixed;
+	height:800px;
+	font-family:Verdana;
+	padding: 50px;
+}
+.etoyin{
+  font-family: 'Courgette', cursive;
+}
+#about{
+	font-size: 1.80em;
+	background-color: #6f9fed;
+	height:750px;
+}
+.about{
+	background-color:#eee;
+	opacity:0.8;
+	margin-top:65px;
+}
+.about-img{
+	margin:10% 20% 0 20%;
+	border-radius:100%;
+	height:300px;
+	width:300px
+}
+
+.contact{
+  padding: 50px;
+  background:url("https://www.proclaiminteractive.com/Portals/0/Blog%20Photos/179260220%202.jpg") center center fixed;
+}
